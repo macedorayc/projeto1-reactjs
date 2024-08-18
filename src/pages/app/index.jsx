@@ -1,24 +1,34 @@
 import './index.scss';
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Cabecalho from '../../components/cabecalho';
 
 
 
 
 export default function App() {
   return (
-    <div className="pagina-app">
-      <h1 classname="titulo1"> Estudos de ReactJS
-        <i className='fa fa-heart'></i>
-      </h1>
-      <br />
-      <h2>Estudando JSX</h2>
+    <div className="pagina-app pagina">
+      <Cabecalho titulo="Estudando ReactJS"/>
+
+      <section className='secao'>
+        <h1> Temas</h1> 
 
       <ul>
-        <li>
+         <li>
           <Link to='/Contato'>Ir para Contato</Link>
-        </li>
-      </ul>
+         </li>
+         <li>
+          <Link to='/eventos'>Ir para Eventos</Link>
+         </li>
+         <li>
+          <Link to='/varestado'> Ir para Variável de Estado</Link>
+         </li>
+         <li>
+          <Link to='/componentes'> Ir para Componentes</Link>
+         </li>
+       </ul>
+      </section>
 
 
     </div>

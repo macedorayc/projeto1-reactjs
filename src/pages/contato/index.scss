@@ -1,5 +1,10 @@
 .pagina-contato {
-    text-align: center;
+
+    .cabeçalho{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
 
     .icone{
         width: 100px;
